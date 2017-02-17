@@ -1,0 +1,111 @@
+.result {
+	display: flex;
+	justify-content: center;
+}
+
+.result .btn-circle {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+
+#container {
+	position: absolute;
+	background-color: rgba(248, 248, 248, 0.95);
+	padding: 2% 2% 2% 2%;
+	margin-left: 5%;
+	width: 90%;
+	min-width: 200px;
+	
+	/*
+		Gerador de sombras
+		http://www.cssmatic.com/es/box-shadow
+	*/	
+	-webkit-box-shadow: 0px 0px 97px -23px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0px 0px 97px -23px rgba(255, 255, 255, 1);
+	box-shadow: 0px 0px 97px -23px rgba(255, 255, 255, 1);
+}
+
+.table-responsive {
+	border: none;
+}
+
+.table-responsive .table th:NTH-CHILD(2) {
+	text-align: center;
+}
+
+.table-hover>tbody>tr:hover {
+    background-color: rgba(192, 192, 193, 0.4);
+}
+
+.title {
+	display: block;
+	margin-bottom: 3%;
+}
+
+.title h3 {
+	margin-top: -10px;
+}
+
+.dropdown :FIRST-CHILD {
+	text-align: left;
+}
+
+.table-responsive .table tr td:NTH-CHILD(1) {
+	display: none;
+}
+
+.table-responsive .table tr td:NOT(:FIRST-CHILD){
+	font-weight: bold;
+	text-align: center;
+}
+
+.table-responsive .table tr td:NTH-CHILD(2){
+	font-weight: normal;
+	text-align: left;
+	
+}
+
+#winners {
+	display: none;
+}
+
+#newPlayer {
+	position: absolute;
+	/*
+	display: none;
+		
+		Gerador de sombras
+		http://www.cssmatic.com/es/box-shadow
+	*/
+	background-color: rgba(248, 248, 248, 0.95);
+	padding: 10px 10px 10px 10px;	
+	-webkit-box-shadow: 0px 0px 97px -23px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0px 0px 97px -23px rgba(255, 255, 255, 1);
+	box-shadow: 0px 0px 97px -23px rgba(255, 255, 255, 1);
+	
+	
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+#register input[type="number"] {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.center {
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin: 5px 0px 15px 0px;
+}
+
+.center .btn-cancel {
+	margin-left: 10px;
+}

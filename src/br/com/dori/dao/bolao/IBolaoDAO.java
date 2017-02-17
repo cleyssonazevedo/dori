@@ -14,7 +14,7 @@ public interface IBolaoDAO extends IGenericDAO<Bolao, Long> {
 	Bolao Insert() throws Exception;
 
 	/**
-	 * Update end
+	 * Atualiza data de fim
 	 * 
 	 * @param bolao
 	 * @return Bolão finalizado
@@ -22,13 +22,18 @@ public interface IBolaoDAO extends IGenericDAO<Bolao, Long> {
 	 */
 	void Finally(Bolao bolao) throws Exception;
 
+	/**
+	 * Retorna o bolão ativo
+	 * @return
+	 * @throws Exception
+	 */
 	Bolao Active() throws Exception;
 
 	/**
 	 * Método para retorno de um bolão de acordo com o seu ID, já faz o
 	 * tratamento do NoResultException, retornando null
 	 * 
-	 * @return Bolão cadastrado
+	 * @return
 	 * @exception Exception Em caso de erros em geral
 	 */
 	@Override
@@ -38,7 +43,7 @@ public interface IBolaoDAO extends IGenericDAO<Bolao, Long> {
 	 * Método para retorno de todos os bolões já cadastrados, já faz o
 	 * tratamento do NoResultException, retornando null
 	 * 
-	 * @return Lista com todos os bolões
+	 * @return
 	 * @exception NoResultException Caso não exista bolões cadastrados
 	 * @exception Exception Em caso de erros em geral
 	 */

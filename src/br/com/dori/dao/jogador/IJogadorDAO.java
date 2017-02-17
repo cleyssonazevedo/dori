@@ -6,8 +6,6 @@ import javax.persistence.NoResultException;
 
 import org.springframework.stereotype.Repository;
 
-import com.sun.istack.internal.NotNull;
-
 import br.com.dori.dao.IGenericDAO;
 import br.com.dori.entities.Jogador;
 
@@ -28,5 +26,5 @@ public interface IJogadorDAO extends IGenericDAO<Jogador, Long> {
 	 * @return Lista com todos os jogadores do bolão
 	 * @throws Exception Em caso de erros em geral
 	 */
-	List<Jogador> FindAll(@NotNull long id) throws Exception;
+	List<Jogador> FindAll(long id) throws Exception;
 }
