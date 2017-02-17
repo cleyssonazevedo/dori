@@ -15,14 +15,14 @@
 	
 	<!-- pacote base do programa, necessário especificar isto para que o spring 
 		reconheça -->
-	<context:component-scan base-package="br.com.bolao" />
+	<context:component-scan base-package="br.com.dori" />
 	<mvc:default-servlet-handler />
 	<mvc:annotation-driven />
 
 	<bean id="mysqlDataSource" class="org.apache.commons.dbcp2.BasicDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<!-- local e nome do banco de dados -->
-		<property name="url" value="jdbc:mysql://localhost:3306/Bolao" />
+		<property name="url" value="jdbc:mysql://localhost:3306/dori" />
 		<property name="username" value="root" />
 		<property name="password" value="root" />
 	</bean>
